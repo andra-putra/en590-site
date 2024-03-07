@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
@@ -12,9 +12,19 @@ body {
     overflow: hidden;
 }
 
+.container h1 {
+    font-size: 40px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .images img {
     width: 45%;
-    margin: 20px 2.5%;
+    margin: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
@@ -25,6 +35,7 @@ body {
 
 .contact-info h2 {
     color: #005792;
+    margin-top: 30px;
 }
 
 .contact-info p {
@@ -34,7 +45,6 @@ body {
 @media screen and (max-width: 768px) {
     .images img {
         width: 90%;
-        margin: 20px 5%;
+        margin: 20px 0;
     }
 }
-
